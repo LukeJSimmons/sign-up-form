@@ -1,4 +1,22 @@
-* {
-    background-color: black;
-    color: white;
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    height: 100%;
+}
+
+section.logo {
+    flex: 1 1 40%;
+    background-image: url('leaf-background.jpg');
+    background-size: cover;
+}
+
+section.form {
+    flex: 1.5 1 60%;
 }
