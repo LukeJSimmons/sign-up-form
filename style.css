@@ -1,5 +1,11 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url('Norse-Bold.otf');
+}
+
 html {
     height: 100vh;
+    background-color: whitesmoke;
 }
 
 body {
@@ -12,11 +18,95 @@ main {
 }
 
 section.logo {
-    flex: 1 1 40%;
+    flex: 1;
     background-image: url('leaf-background.jpg');
     background-size: cover;
+    text-align: center;
+}
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+    margin-top: 33%;
+    padding: 1rem 0;
+}
+
+.logo img {
+    width: 6rem;
+}
+
+.logo h1 {
+    color: white;
+    font-family: 'Norse Bold', sans-serif;
+    font-size: 5rem;
+}
+
+.logo p,
+.logo a {
+    color: white;
+    margin-top: 100%;
 }
 
 section.form {
-    flex: 1.5 1 60%;
+    flex: 2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.form .container {
+    margin: 5rem;
+    margin-top: 10rem;
+    font-size: 0.9rem;
+}
+
+section.form div.form {
+    text-align: left;
+}
+
+div.form fieldset {
+    border: none;
+    background-color: white;
+    color: rgb(82, 81, 81);
+    padding: 1rem 2rem;
+    box-shadow: 0 0.25rem 0.25rem grey;
+}
+
+div.form div {
+    display: flex;
+}
+
+label {
+    font-size: 0.75rem;
+    margin: 1rem;
+    width: 15rem;
+}
+
+input {
+    display: block;
+    border: 0.1rem solid lightgrey;
+    width: 100%;
+}
+
+input:focus {
+    border: 0.1rem solid blue;
+    box-shadow: 0.1rem 0.1rem 0.2rem grey;
+}
+
+input:invalid {
+    border: 0.1rem solid red;
+}
+
+div.form button {
+    color: white;
+    background-color: #596D48;
+    border: none;
+    border-radius: 0.75rem;
+    margin: 2.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+}
+
+section.form p {
+    margin-left: 2.5rem;
 }
